@@ -1,0 +1,20 @@
+.restaurantcard_container{
+    display: flex;
+    width:70vw;
+    justify-content: space-between;
+    margin:20px;
+    border:2px solid red;
+    padding:20px;
+
+}
+
+/* card image and content details */
+.card_image_details{
+    display: flex;
+    gap:2rem;
+}
+
+/* product image */
+.card_image_details>img{
+    width:70px;
+}

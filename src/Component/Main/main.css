@@ -1,0 +1,20 @@
+.Main_total_Amount{
+    display: flex;
+    margin:20px;
+    padding:20px;
+    border: 2px solid blue;
+    font-weight: 600;
+    font-size: 2rem;
+    justify-content: space-between;
+    width:70vw;
+}
+.mainAlterNameUi{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:calc(100vh - 90px);
+}
+
+.mainAlterNameUi > h1{
+    text-align: center;
+}
