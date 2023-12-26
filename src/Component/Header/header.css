@@ -11,3 +11,8 @@
 .header_container>i{
     font-size: 2rem;
 }
+.header_container>i>sup{
+    font-size: 1.1rem;
+    padding:10px;
+    border-radius: 50%;
+}
