@@ -24,9 +24,6 @@ function App() {
     <div className="App">
       <Header totalCart={cartVal}></Header>
       <Main totalProduct={setTotalProduct}></Main>
-      <footer>
-        <p>© 2023 UseReducer Company</p>
-      </footer>
     </div>
   );
 }
