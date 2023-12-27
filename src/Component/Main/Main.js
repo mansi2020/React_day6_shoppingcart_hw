@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Productcard from "../Productcard/Productcard";
 import cardData from "./../Productlist.json";
 import "./main.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Main = (props) => {
+  // aos animation
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
+
   // use state for product list-------------------------
   const [totalProduct, setTotalProduct] = useState(4);
   const [totalPrice, setTotalPrice] = useState(2199.96);
@@ -39,9 +46,11 @@ const Main = (props) => {
   return (
     <>
       {/* heading */}
-      <div className="main_heading">YOUR BAG</div>
+      <div className="main_heading" data-aos="flip-left">
+        YOUR BAG
+      </div>
       {visible ? (
-        <div className="main_container">
+        <div className="main_container" data-aos="flip-left">
           {/* products */}
           <div className="main_products_list">
             {cardData.map((item) => {
@@ -72,7 +81,7 @@ const Main = (props) => {
         </div>
       ) : (
         <div className="mainAlterNameUi">
-          <h1>Cart Cleared</h1>
+          <h1>is currently empty !</h1>
         </div>
       )}
     </>

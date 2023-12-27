@@ -1,20 +1,63 @@
-.restaurantcard_container{
-    display: flex;
-    width:70vw;
-    justify-content: space-between;
-    margin:20px;
-    border:2px solid red;
-    padding:20px;
+/* productcard.css */
 
+/* Container for each product card */
+.restaurantcard_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 850px;
 }
 
-/* card image and content details */
-.card_image_details{
-    display: flex;
-    gap:2rem;
+/* Styling for the product image and content container */
+.card_image_details {
+  display: flex;
+  align-items: center;
 }
 
-/* product image */
-.card_image_details>img{
-    width:70px;
+.card_image_details img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.card_details h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card_details h3 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.card_details p {
+  font-size: 14px;
+  color: #ff6347;
+  cursor: pointer;
+}
+
+/* Styling for the quantity section */
+.cards_qty_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  cursor: pointer;
+  font-size: 20px;
+  color:rgb(0,0,255);
+  margin: 0 5px;
+}
+
+/* Styling for the cart quantity */
+.cart_qty {
+  font-size: 16px;
+  margin: 0 10px;
 }

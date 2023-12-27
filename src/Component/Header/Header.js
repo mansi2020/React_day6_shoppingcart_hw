@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 
 const Header = (props) => {
@@ -6,7 +6,7 @@ const Header = (props) => {
     <div className="header_container">
       <h1>UseReducer</h1>
       <i class="fa-solid fa-cart-plus">
-        <sup>{props.totalCart}</sup>
+        <div>{props.totalCart}</div>
       </i>
     </div>
   );

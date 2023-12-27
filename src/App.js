@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Component/Header/Header";
 import Main from "./Component/Main/Main";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  // aos animation
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
+
   // state----------------------
   const [cartVal, setCartVal] = useState(4);
 
@@ -17,6 +24,9 @@ function App() {
     <div className="App">
       <Header totalCart={cartVal}></Header>
       <Main totalProduct={setTotalProduct}></Main>
+      <footer>
+        <p>© 2023 UseReducer Company</p>
+      </footer>
     </div>
   );
 }

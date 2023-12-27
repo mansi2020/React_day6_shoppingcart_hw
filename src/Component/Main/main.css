@@ -2,19 +2,80 @@
     display: flex;
     margin:20px;
     padding:20px;
-    border: 2px solid blue;
     font-weight: 600;
     font-size: 2rem;
     justify-content: space-between;
-    width:70vw;
 }
-.mainAlterNameUi{
+/* .mainAlterNameUi{
     display:flex;
     align-items: center;
     justify-content: center;
-    height:calc(100vh - 90px);
-}
+    
+} */
 
 .mainAlterNameUi > h1{
     text-align: center;
+    margin-top: 3rem;
 }
+
+/* list--------------------- */
+/* main.css */
+
+/* Styling for main heading */
+.main_heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* Styling for the container holding the products */
+  .main_container {
+    margin: 0 auto;
+    max-width:max-content;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  /* Styling for individual product cards */
+  .main_products_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Styling for total amount section */
+  .Main_total_Amount {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #ff6347;
+    color:white;
+  }
+  
+  /* Styling for clear button */
+  .Main_clear_btn {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .Main_clear_btn button {
+    padding: 10px 20px;
+    background-color: #ff9c8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(201, 201, 201);
+  }
+  
+  .Main_clear_btn button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-1.5px);
+  }
+  
